@@ -3,8 +3,8 @@ h1, h2 {
     text-align: center;
     color: white;
     text-shadow: 1px 1px 0px black;  
-    margin-top:25px;
-    margin-bottom: 15px;
+    margin-top:5px;
+    margin-bottom: 5px;
 }
 
 p {
@@ -24,8 +24,8 @@ fieldset {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-top: 5px;
 }
 
@@ -33,17 +33,28 @@ fieldset {
     font-weight: bold;
     text-shadow: 0.5px 0.5px 0px #ffffff;
     text-align: center;
+    
 }
 
 .Error {
     color: red;
     text-align: center;
-    text-shadow: 0.5px 0.5px 0px #ffffff;
 }
 
 select {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
+}
+
+.SelectDefaults{
+    border: 2px;
+    border-style: inset;
+}
+
+.SelectError{
+    border: 2px;
+    border-style: inset;
+    border-color: red;
 }
 
 button {
@@ -54,14 +65,21 @@ button {
     margin:0 auto;
 }
 
-input {
-    border: 1px solid #000000;
+.InputsDefault {
+    border-style: inset;
     height: 20px;
     background-color: rgb(240, 240, 242);
 }
 
+.InputsError {
+    border-style: inset;
+    height: 20px;
+    background-color: rgb(240, 240, 242);
+    border-color: red;
+}
+
 body {
-    background-image: url(/img/background.png);
+    background-image: url(img/background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
